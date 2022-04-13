@@ -1,0 +1,313 @@
+* {
+    margin:0;
+    padding: 0;
+    background-color: rgba(236, 52, 144, 0.02);
+}
+
+.banner{
+    background-color: rgba(236, 52, 144);
+    width:100%;
+    height: 15vh;
+    z-index: 12;
+    position: fixed;
+}
+.nav-links li{
+    list-style-type: none;
+    padding: 35px;
+}
+.nav-links{
+    display: flex;
+    float:right;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+main{
+    padding-top: 15vh;
+}
+.form{
+    width: 100%;
+}
+.form-info{
+    padding-top: 50px;
+    text-align: center;
+}
+#email{
+    width: 30%;
+    padding: 15px;
+    border:none;
+    background-color: white;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 15px;
+}
+
+.btn{
+    padding: 15px;
+    background-color: black;
+    color: pink;
+    border: none;
+}
+.art-sec{
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+.art-sec header h1{
+    color: rgb(202, 49, 125);
+    text-align: center;
+    font-size: 50px; 
+    letter-spacing: 8px;
+}
+article{
+    display: flex;
+    padding: 80px;
+}
+article p {
+    padding: 20px;
+    line-height: 40px;
+    height: auto;
+}
+.pic{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.grid-container{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 20px;   
+}
+.grid-container h1{
+    background-color: rgba(236, 52, 144, 0.6);
+    padding: 20px;
+}
+.grid-container p{
+    padding: 15px;
+}
+.grid-item{
+    border: 3px solid;
+    
+    line-height: 30px;
+}
+.pic-info{
+    width: 100%;
+    padding-top:100px;
+}
+.grid-container1:hover{
+    animation-name: pic-info;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+.grid-container1{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    background-color: white;
+    color: rgb(202, 49, 125);   
+}
+.grid-item1{
+    padding: 15px;
+    line-height: 40px;
+    
+}
+.grid-item1 p{
+    padding-top: 50px;
+    font-size: 20px;
+}
+.grid-item1 h1{
+    padding-top: 50px;
+    font-size: 35px;
+}
+.btn-btn{
+    text-decoration: none;
+    color: pink;
+    background-color: black;
+    width: 50%;
+    padding: 8px;
+   float: right;
+}
+footer{
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 100px;   
+}
+footer ul{
+    display: flex;
+    margin-left: 35%;
+}
+footer li{
+    list-style-type: none;
+    display: flex;
+    padding: 35px;  
+}
+footer li a {
+    text-decoration: none;    
+}
+footer p{
+    text-align: right;
+}
+@keyframes slide{
+    50%{
+        transform:scale(0.9);
+        background-color: rgba(236, 52, 144, 0.09);
+    }
+}
+@keyframes pic-info{
+    0%{background-color: rgba(236, 52, 144, 0.5);
+        animation-fill-mode: forwards;
+        cursor: pointer;
+        color: white;
+    }
+}
+@media only screen and (max-width:400px){
+    .banner{
+        background-color: rgb(22, 15, 18);
+    }
+    .nav-links li{  
+        padding: 35px;
+    }
+    .nav-links{
+        float:left;
+    }
+    .link{
+        color: pink;
+        font-size: 18px;
+    }
+    #email{
+        width: 65%;
+        letter-spacing: 10px;    
+    }
+    .art-sec{
+        padding-top: 30px;
+        animation-name: none;
+        animation-duration: 0s;
+        animation-iteration-count: 0;
+    }
+    .art-sec header h1{
+        font-size: 35px; 
+        letter-spacing: 10px;
+    }
+    article{
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin-top: 25px;
+    }
+    article p {
+        padding: 10px;
+        line-height: 30px;
+        text-align: justify;   
+    }
+    .grid-container{
+        display: block;
+        margin-top: 20px;
+        padding: 0;   
+    }
+    .grid-container h1{
+        background-color: rgba(236, 52, 144, 0.6);
+        padding: 10px;
+    }
+    .grid-container p{
+        padding: 10px;
+    }
+    .grid-item{
+        border: none;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .btn-btn{
+        text-decoration: none;
+        color: pink;
+        background-color: black;
+        width: 20%;
+        padding: 2px;
+        float: right;
+        margin-top: -15px;
+    }
+    .grid-container1{
+        display: block;  
+    }
+    .grid-item1{
+        padding: 0px;
+        line-height: 30px;
+    }
+    .grid-item1 p{
+        padding-top: 15px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .grid-item1 h1{
+        padding-top: 20px;
+        font-size: 35px;
+    }
+    footer ul{
+        display: flex;
+        margin-left: 0;
+    }
+    footer p{
+        text-align: right;
+      
+    }
+    
+}
+@media only screen and (min-width:768px){
+    .banner{
+        background-color: rgba(236, 52, 144);
+    }
+    .nav-links li{  
+        padding: 45px;
+    }
+    #email{
+        width: 50%;
+    }
+    article{
+        display: block;
+        padding: 50px;
+    }
+    article p {
+        padding: 0px;
+        line-height: 40px;
+        height: auto;
+        text-align: justify;
+    }
+    .pic{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .grid-container1{
+        display: block;  
+    }
+    .grid-item1{
+        padding: 0px;
+        line-height: 30px;
+    }
+    .grid-item1 p{
+        padding-top: 15px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .grid-item1 h1{
+        padding-top: 20px;
+        font-size: 35px;
+    }
+    footer ul{
+        display: flex;
+        margin-left: 0;
+    }
+    footer p{
+        text-align: right;
+      
+    }
+}
+
+
