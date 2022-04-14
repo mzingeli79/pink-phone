@@ -168,7 +168,7 @@ footer p{
         color: white;
     }
 }
-@media only screen and (max-width:595,2px){
+@media only screen and (max-width:596px){
     .banner{
         background-color: rgba(236, 52, 144);     
     }
