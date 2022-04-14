@@ -168,12 +168,13 @@ footer p{
         color: white;
     }
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:576px){
     .banner{
-        background-color: rgb(22, 15, 18);
+        background-color: rgba(236, 52, 144);     
     }
     .nav-links li{  
-        padding: 35px;
+        padding: 40px;
+        margin-left: 30px;
     }
     .nav-links{
         float:left;
@@ -181,10 +182,11 @@ footer p{
     .link{
         color: pink;
         font-size: 18px;
+        
     }
     #email{
         width: 65%;
-        letter-spacing: 10px;    
+        letter-spacing: 8px;    
     }
     .art-sec{
         padding-top: 30px;
@@ -207,6 +209,10 @@ footer p{
         line-height: 30px;
         text-align: justify;   
     }
+    .pic{
+        display: inline-block;
+        width: 50%; 
+    }
     .grid-container{
         display: block;
         margin-top: 20px;
@@ -223,6 +229,7 @@ footer p{
         border: none;
         line-height: 30px;
         margin-bottom: 20px;
+        text-align: justify;
     }
     .btn-btn{
         text-decoration: none;
@@ -244,6 +251,7 @@ footer p{
         padding-top: 15px;
         font-size: 18px;
         line-height: 30px;
+        text-align: justify;
     }
     .grid-item1 h1{
         padding-top: 20px;
@@ -251,7 +259,7 @@ footer p{
     }
     footer ul{
         display: flex;
-        margin-left: 0;
+       
     }
     footer p{
         text-align: right;
