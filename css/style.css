@@ -169,12 +169,17 @@ footer p{
     }
 }
 @media only screen and (max-width:600px){
+    *{
+        padding-left:5px;
+        padding-right:5px;
+    }
     .banner{
         background-color: rgba(236, 52, 144);     
     }
     .nav-links li{  
-        padding: 40px;
+        padding: 15px;
         margin-left: 30px;
+        margin-top:30px;
     }
     .nav-links{
         float:left;
