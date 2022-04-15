@@ -169,10 +169,6 @@ footer p{
     }
 }
 @media only screen and (max-width:600px){
-    *{
-        padding-left:5px;
-        padding-right:5px;
-    }
     .banner{
         background-color: rgba(236, 52, 144);     
     }
@@ -252,7 +248,7 @@ footer p{
         display: block;  
     }
     .grid-item1{
-        padding: 0px;
+        padding: 3px;
         line-height: 30px;
     }
     .grid-item1 p{
