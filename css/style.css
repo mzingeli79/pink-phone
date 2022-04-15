@@ -147,7 +147,7 @@ footer ul{
 footer li{
     list-style-type: none;
     display: flex;
-    padding: 35px;  
+    /*padding: 35px;*/  
 }
 footer li a {
     text-decoration: none;    
